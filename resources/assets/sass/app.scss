@@ -1,0 +1,42 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+
+// Bulma
+@import "node_modules/bulma/bulma";
+
+// Bulma Vue Modules
+@import "node_modules/buefy/src/scss/buefy";
+
+// Other SCSS Files
+@import "overrides";
+@import "helpers";
+@import "manage";
+@import "styles";
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.hero-body {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/doc.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+
