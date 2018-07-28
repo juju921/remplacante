@@ -54,10 +54,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-	    $users = User::with([ 'nom','prenom','adresse'])
-	                 ->findOrFail($id);
 
-
+	    $users = User::findOrfail($id);
 	    return response()
 		    ->json([
 			    'users' => $users

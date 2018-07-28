@@ -19,11 +19,12 @@ Vue.use(VueGoogleMaps, {
 
 
 })
-Vue.component('home', require('./components/Home.vue'));
-Vue.component('profil', require('./components/Profil.vue'));
+
 
 const app = new Vue({
     el: '#app',
-	//render: h => h(App),
+	template: `<app></app>`,
+	components: { App },
 	router
+
 });

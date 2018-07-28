@@ -1,7 +1,7 @@
 <template>
 
     <div class="panel panel-default columns is-mobile 	">
-        <router-view></router-view>
+        <!--<router-view></router-view>-->
         <div class="columns">
 
             <div class="column">
@@ -24,7 +24,7 @@
                         <!--<router-link  :to="1" class="button">Voir le profil-->
                         <!--</router-link>-->
 
-                        <router-link class="btn btn-info btn-xs" v-bind:to="{name: 'profil', params: {id: user.id}}"><i class="fa fa-eye" aria-hidden="true"></i> Show</router-link>
+                        <router-link class="btn btn-info btn-xs" v-bind:to="{name: 'user', params: {id: user.id}}"><i class="fa fa-eye" aria-hidden="true"></i> Show</router-link>
 
 
 

@@ -4,9 +4,9 @@
 <div class="management-area  is-clearfix" >
     <div id="app" class="is-clearfix">
 
-        <home>
+        {{--<home>--}}
 
-        </home>
+        {{--</home>--}}
     </div>
 </div>
 
