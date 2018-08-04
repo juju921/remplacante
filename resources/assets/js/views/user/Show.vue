@@ -15,7 +15,11 @@
 
                         <p>{{users.adresse}}, {{users.ville}}</p>
                         <p>Disponible</p>
-                        <button class="button is-primary">Envoyer un message</button>
+
+                        <router-link :to="{name: 'mission', params: {id: users.id}}" class="list-group-item d-flex justify-content-between align-items-center">
+                            Envoyer un message
+                        </router-link>
+                        <!--<button class="button is-primary">Envoyer un message</button>-->
 
                     </div>
 
@@ -35,6 +39,9 @@
             <h2>FORMATIONS</h2>
 
 
+        </div>
+        <div class="box">
+            <h2>Avis et commentaires</h2>
         </div>
 
         <div class="box">
@@ -72,10 +79,14 @@
 	import axios from 'axios'
 	import * as VueGoogleMaps from 'vue2-google-maps'
 
+
+
 	export default {
 		data() {
 			return {
+
 				users: {
+					id:'',
 					nom: '',
 					prenom:'',
 					adresse:'',
@@ -124,6 +135,7 @@
 			this.created();
 
 		},
+
 
 		methods: {
 			created() {

@@ -17,6 +17,9 @@ Route::get('/', 'HomeController@index')->name('home');
 
 
 Route::get('/compte','CompteController@index')->name('compte.index');
+Route::get('/conversations', 'ConversationsController@index')->name('conversations');
+Route::get('/conversations/{user}', 'ConversationsController@index')->name('conversations');
+Route::get('/conversations/{user}', 'ConversationsController@index');
 
 Auth::routes();
 

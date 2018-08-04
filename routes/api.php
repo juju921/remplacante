@@ -18,3 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('user','UserController');
+Route::resource('mission', 'MissionController');
+
+
+Route::get('/conversations', 'Api\ConversationsController@index');
+Route::get('/conversations/{user}', 'Api\ConversationsController@show');
+Route::post('/conversations/{user}', 'Api\ConversationsController@store');
+

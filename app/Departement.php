@@ -7,9 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class Departement extends Model
 {
-    //
-
-
 
 	public function Regions(){
 		return $this->hasMany('App\Region');

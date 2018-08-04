@@ -4,10 +4,11 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
-	use Notifiable;
+	use Notifiable, HasApiTokens;
 
 	/**
 	 * The attributes that are mass assignable.
@@ -32,4 +33,16 @@ class User extends Authenticatable
 	public function Departements(){
 		return $this->hasMany('App\Departement');
 	}
+
+	public function comments()
+	{
+		return $this->hasMany('App\Comment');
+	}
+
+	public function roles()
+	{
+		return $this->belongsToMany(Role::class);
+	}
+
+
 }

@@ -20,11 +20,16 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "ajv": "^6.5.2",
         "buefy": "^0.6.6",
         "bulma": "^0.7.1",
+        "date-fns": "^1.29.0",
         "font-awesome": "^4.7.0",
-        "jshint": "^2.9.5",
+        "jshint": "^2.9.6",
+        "moment": "^2.22.2",
+        "vue-airbnb-style-datepicker": "^1.11.3",
         "vue-router": "^3.0.1",
-        "vue2-google-maps": "^0.10.0"
+        "vue2-google-maps": "^0.10.0",
+        "vuex": "^3.0.1"
     }
 }

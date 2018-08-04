@@ -53,10 +53,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
 
-
-
-	    //	->results[0]->address_components[2]->long_name
-	    return Validator::make($data, [
+    	return Validator::make($data, [
             'nom' => 'required|string|max:255',
             'prenom' => 'required|string|max:255',
 	        'adresse'=> 'required|string|max:255',
@@ -126,10 +123,6 @@ class RegisterController extends Controller
 	        //dd($city);
 	   $departements = $departement->id;
 	   //dd($departements);
-
-
-
-
 
 
 
